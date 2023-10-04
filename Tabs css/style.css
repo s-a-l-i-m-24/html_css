@@ -13,7 +13,7 @@ body{
     padding: 0px;
     margin: 50px;
     position: relative;
-    /* border: 1px solid #000; */
+    /* jggborder: 1px solid #000; */
 }
 .tab-wrap input[type="radio"]{
     position: absolute;
