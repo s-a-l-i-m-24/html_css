@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial;
+    background: #bdc3c7;
+}
+.accordion{
+    width: 60%;
+    margin: 50px;
+    background: #fff;
+}
+.accordion-tab > label{
+    color: #fff;
+    background: #3498db;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 12px 18px;
+}
+.accordion-tab > label:after{
+    content: "\f078";
+    font-family: fontawsome;
+    position:absolute;
+    top: 13px;
+    right: 22px;
+    transform: rotate(90deg);
+    transition: transform .3s;
+}
+.accordion-tab > input{
+    display: none;
+}
+.accordion-content p{
+    padding: 15px 15px;
+    line-height: 20px;
+}
+.accordion-tab > .accordion-content{
+    max-height: 0;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+    max-height: 100vh;
+}
+.accordion-content{
+    border: 1px solid white;
+}
